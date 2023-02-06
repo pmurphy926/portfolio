@@ -9,26 +9,19 @@ import Home from './components/home'
 import Contact from './components/contact'
 
 const App = () => {
-  
-  const [homeDisplay, setHomeDisplay] = useState(true)
-  const [aboutDisplay, setAboutDisplay] = useState(false)
-  const [skillsDisplay, setSkillsDisplay] = useState(false)
-  const [projectsDisplay, setProjectsDisplay] = useState(false)
-  const [contactDisplay, setContactDisplay] = useState(false)
 
   return (
     <>
-    <Routes>
-      <Route path='/' element={<Home />} />
-    </Routes>
-      {/* <Nav homeDisplay={homeDisplay} setHomeDisplay={setHomeDisplay} aboutDisplay={aboutDisplay} setAboutDisplay={setAboutDisplay} skillsDisplay={skillsDisplay} setSkillsDisplay={setSkillsDisplay} projectsDisplay={projectsDisplay} setProjectsDisplay={setProjectsDisplay}  contactDisplay={contactDisplay} setContactDisplay={setContactDisplay}/>
-      <div className='container'>
-        {homeDisplay ? <Home /> : null}
-        {aboutDisplay ? <About /> : null}
-        {skillsDisplay ? <Skills /> : null}
-        {projectsDisplay ? <Projects /> : null}
-        {contactDisplay ? <Contact /> : null}
-      </div> */}
+    {/* <Nav /> */}
+    <div className='container'>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/skills' element={<Skills />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/contact' element={<Contact />} />
+      </Routes>
+    </div>
     </>
   )
 }

@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <div className='skills-div'>
         <h3>Skills</h3>
-        <p>During my time as a software development fellow, I worked with the following tools and languages:</p>
+        <p>During my time in General Assembly's immersive software development course, I worked with the following tools and languages:</p>
         <div className='skills-grid'>
             <div><img className='skills-img' src="/html.png" alt="" /></div>
             <div><img className='skills-img' src="/css.png" alt="" /></div>

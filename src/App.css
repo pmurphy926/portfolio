@@ -116,11 +116,12 @@ body {
   padding: 5%;
   background-color: rgb(65, 65, 65);
   align-content: center;
-  min-height: 450px;
+  min-height: 500px;
   max-height: 700px;
 }
 
 .header-h3 {
+  margin-left: 5px;
   text-decoration: none;
   margin-top: 10px;
   float: left;
@@ -149,8 +150,6 @@ p {
   text-align: justify;
 }
 
-
-
 .skills-img {
   width: 80%;
 }
@@ -166,9 +165,53 @@ p {
 }
 
 
+.home-header-div {
+  text-align: center;
+}
+/* .home-div {
+  text-align: center;
+} */
+
+.home-nav-grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 10px;
+  justify-content: center;
+}
+
+.home-nav-grid-item {
+  text-align: center;
+  padding: 25% 15% 25% 15%;
+}
+
+#home-projects {
+  background-image: url(../public/code.jpg);
+  background-size: cover;
+}
+
+#home-contact {
+  background-image: url(../public/contact.jpg);
+  background-size: cover;
+}
+
+#home-about {
+  background-image: url(../public/about.png);
+  background-size: cover;
+}
+
+#home-skills {
+  background-image: url(../public/skills.png);
+  background-size: cover;
+}
+
+/* .home-span {
+  font-size: 175%;
+} */
+
 @media screen and (max-width: 992px) {
   .project-images-grid {
     grid-template-columns: 40% 40%;
+    grid-template-rows: auto auto;
   }
 
  .nav-ul {

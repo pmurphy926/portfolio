@@ -13,8 +13,8 @@ const Nav = (props) => {
                     <li> <button className='nav-btn' onClick={() => {navigate('/')}}>Home</button> </li>
                     <li> <button className='nav-btn' onClick={() => {navigate('/about')}}>About</button> </li>
                     <li> <button className='nav-btn' onClick={() => {navigate('/skills')}}>Skills</button> </li>
-                    <li> <button className='nav-btn' onClick={() => {navigate('/skills')}}>Projects</button> </li>
-                    <li> <button className='nav-btn' onClick={() => {navigate('/skills')}}>Contact</button> </li>
+                    <li> <button className='nav-btn' onClick={() => {navigate('/projects')}}>Projects</button> </li>
+                    <li> <button className='nav-btn' onClick={() => {navigate('/contact')}}>Contact</button> </li>
                 </ul>
             </nav>
         </div>

@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Nav from './components/nav'
 import About from './components/about'
 import Skills from './components/skills'
@@ -17,14 +18,17 @@ const App = () => {
 
   return (
     <>
-      <Nav homeDisplay={homeDisplay} setHomeDisplay={setHomeDisplay} aboutDisplay={aboutDisplay} setAboutDisplay={setAboutDisplay} skillsDisplay={skillsDisplay} setSkillsDisplay={setSkillsDisplay} projectsDisplay={projectsDisplay} setProjectsDisplay={setProjectsDisplay}  contactDisplay={contactDisplay} setContactDisplay={setContactDisplay}/>
+    <Routes>
+      <Route path='/' element={<Home />} />
+    </Routes>
+      {/* <Nav homeDisplay={homeDisplay} setHomeDisplay={setHomeDisplay} aboutDisplay={aboutDisplay} setAboutDisplay={setAboutDisplay} skillsDisplay={skillsDisplay} setSkillsDisplay={setSkillsDisplay} projectsDisplay={projectsDisplay} setProjectsDisplay={setProjectsDisplay}  contactDisplay={contactDisplay} setContactDisplay={setContactDisplay}/>
       <div className='container'>
         {homeDisplay ? <Home /> : null}
         {aboutDisplay ? <About /> : null}
         {skillsDisplay ? <Skills /> : null}
         {projectsDisplay ? <Projects /> : null}
         {contactDisplay ? <Contact /> : null}
-      </div>
+      </div> */}
     </>
   )
 }

@@ -23,6 +23,11 @@ const Contact = () => {
       .catch((err) => {
         console.log('FAILED...', err);
       });
+      setToSend({
+        from_name: '',
+        message: '',
+        reply_to: '',
+      })
   };
 
   const handleChange = (e) => {
@@ -32,11 +37,13 @@ const Contact = () => {
 
   return (
     <>
-    <h3>Reach Out!</h3>
+    <div className='contact-header'>
+      <h3>Reach Out!</h3>
+    </div>
     <div className='form-outer-div'>
       <div className='form-div'>
         <form onSubmit={onSubmit}>
-          <label className='form-input-label' htmlFor="from_name">Name:</label>
+          <label className='form-input-label' htmlFor="from_name">Your Name:</label>
           <br />
           <input
             className='form-input'
@@ -58,15 +65,18 @@ const Contact = () => {
           <br />
           <label className='form-input-label' htmlFor="message">Message:</label>
           <br />
-          <input
+          <textarea
             className='form-input'
-            type='text'
+            id='message-input'
+            type="text"
             name='message'
             value={toSend.message}
             onChange={handleChange}
           />
           <br />
-        <button type='submit'>Send me a message!</button>
+          <div className='form-button-div'>
+          <button className='form-button' type='submit'>Send me a message!</button>
+        </div>
         </form>
       </div>
     </div>

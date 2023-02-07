@@ -7,12 +7,14 @@ import Skills from './components/skills'
 import Projects from './components/projects'
 import Home from './components/home'
 import Contact from './components/contact'
+import IconBar from './components/iconbar'
 
 const App = () => {
 
   return (
     <>
     <Nav />
+    <IconBar />
     <div className='container'>
       <Routes>
         <Route path='/' element={<Home />} />

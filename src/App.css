@@ -209,6 +209,7 @@ p {
 
 .home-nav-grid-item:hover {
   filter: grayscale(100%);
+  cursor: pointer;
   /* transform: rotate(-5deg) scale(1.2); */
 }
 
@@ -234,10 +235,26 @@ p {
 
 .home-span {
   font-family: homeDiv;
-  font-size: 4.5em;
+  font-size: 4.5vw;
   /* color: #79b0ef; */
   color: white;
   -webkit-text-stroke: 2px black;
+}
+
+.form-div {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form-input {
+  width: 300px;
+  padding: 10px;
+}
+
+.form-input-label {
+  font-family: text;
 }
 
 @media screen and (max-width: 992px) {

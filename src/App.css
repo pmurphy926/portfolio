@@ -1,3 +1,18 @@
+@font-face {
+  font-family: homeDiv;
+  src: url(../public/floral.otf);
+}
+
+@font-face {
+  font-family: headings;
+  src: url(../public/Forzan.ttf)
+}
+
+@font-face {
+  font-family: text;
+  src: url(../public/josefin.ttf);
+}
+
 body {
   margin: 5px 10%;
   background-color: rgb(44, 44, 44);
@@ -10,6 +25,10 @@ body {
   margin-left: 10px;
   color: #79b0ef;
   cursor: pointer;
+}
+
+.li {
+  font-family: text;
 }
 
 .nav-btn {
@@ -121,6 +140,8 @@ body {
 }
 
 .header-h3 {
+  color: coral;
+  font-family: headings;
   margin-left: 5px;
   text-decoration: none;
   margin-top: 10px;
@@ -138,13 +159,14 @@ h1 {
 }
 
 h3 {
+  font-family: headings;
   margin-bottom: 6px;
   color: #79b0ef;
-  text-decoration: underline;
   padding-bottom: 4px;
 }
 
 p {
+  font-family: text;
   margin-top: 4px;
   color: lightgray;
   text-align: justify;
@@ -181,7 +203,13 @@ p {
 
 .home-nav-grid-item {
   text-align: center;
-  padding: 25% 15% 25% 15%;
+  padding: 18% 0 18% 0;
+  /* transition: all .5s; */
+}
+
+.home-nav-grid-item:hover {
+  filter: grayscale(100%);
+  /* transform: rotate(-5deg) scale(1.2); */
 }
 
 #home-projects {
@@ -204,9 +232,13 @@ p {
   background-size: cover;
 }
 
-/* .home-span {
-  font-size: 175%;
-} */
+.home-span {
+  font-family: homeDiv;
+  font-size: 4.5em;
+  /* color: #79b0ef; */
+  color: white;
+  -webkit-text-stroke: 2px black;
+}
 
 @media screen and (max-width: 992px) {
   .project-images-grid {

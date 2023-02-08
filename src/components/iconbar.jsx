@@ -11,7 +11,7 @@ const IconBar = () => {
                 <img className='icon-bar-icon' src="/resume.png" alt="Document icon" />
             </a>
             <a href="https://github.com/pmurphy926" class="github" target="_blank">
-                <img className='icon-bar-icon' src="/github.png" alt="Github logo" />
+                <img className='icon-bar-icon' src="/github3.png" alt="Github logo" />
             </a>
         </div>
         </>

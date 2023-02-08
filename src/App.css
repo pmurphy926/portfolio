@@ -244,16 +244,20 @@ p {
 .form-div {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .form-input {
-  width: 450px;
+  width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   margin-top: 5px;
   font-family: form;
+}
+
+form {
+  width: 50%;
 }
 
 .form-input-label {
@@ -265,7 +269,6 @@ p {
   font-family: form;
   height: 200px;
   resize: none;
-  width: 453px;
 }
 
 .form-button {
@@ -301,13 +304,10 @@ p {
 .icon-bar a{
   display:block;
   text-align: center;
-  padding:0.5rem;
   transition: all 0.5s ease;
   color: white;
   font-size: 20px;
   opacity: 0.7;
-  
-
 }
 
 .icon-bar a:hover{
@@ -316,15 +316,15 @@ p {
 
 
 .linkedin{
-  background-color: #0077b5;
+  background-color: #0288D1;
 }
 
 .resume{
-  background-color: #5f686f;
+  background-color: #C2E8FF;
 }
 
 .github{
-  background-color: #6aaabd;
+  background-color: #6693C1;
 }
 
 .icon-bar-icon {
@@ -349,5 +349,14 @@ p {
 
   .icon-bar {
       left: 0;
+  }
+
+  form {
+    width: 90%;
+    margin-right: 10%;
+  }
+
+  .form-input {
+    width: 100%;
   }
 }

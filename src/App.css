@@ -191,7 +191,6 @@ p {
   color: lightgray
 }
 
-
 .home-header-div {
   text-align: center;
 }
@@ -359,4 +358,21 @@ form {
   .form-input {
     width: 100%;
   }
+
+  .home-nav-grid {
+    grid-template-columns: 100%;
+  }
+
+  .home-span {
+    font-size: 9vw;
+  }
+
+  .container {
+    min-height: 700px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 50% 50%;
+  }
+
 }

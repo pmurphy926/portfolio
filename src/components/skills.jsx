@@ -3,7 +3,8 @@ import React, {useState, useEffect} from 'react'
 const Skills = () => {
   return (
     <div className='skills-div'>
-        <h3>Skills</h3>
+        <h3 className='component-heading'>Skills</h3>
+        <hr />
         <p>During my time in General Assembly's immersive software development course, I worked with the following tools and languages:</p>
         <div className='skills-grid'>
             <div><img className='skills-img' src="/html.png" alt="" /></div>

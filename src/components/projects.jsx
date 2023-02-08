@@ -6,7 +6,8 @@ const Projects = () => {
     
     return (
         <div className='projects-div'>
-            <h3>Projects</h3>
+            <h3 className='component-heading'>Projects</h3>
+            <hr />
             <p>Below are some of the projects I have worked on both independently and in groups.</p>
             <div className='project-images-grid'>
                 

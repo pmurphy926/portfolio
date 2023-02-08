@@ -6,7 +6,8 @@ const About = () => {
 
   return (
     <div className='about-div'>
-        <h3>About Me</h3>
+        <h3 className='component-heading'>About Me</h3>
+        <hr />
         <div className='bio'>
           <div className='bi-img-div'>
             <img onClick={() => {navigate('/contact')}} className='bio-img' src="/profile.png" alt="Patrick Murphy" />

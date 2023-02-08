@@ -1,10 +1,12 @@
 import React, {useState, useEffect} from 'react'
 import { useNavigate } from 'react-router-dom'
+import AnimatedPage from './animatedpage';
 
 const About = () => {
   const navigate = useNavigate();
 
   return (
+    <AnimatedPage>
     <div className='about-div'>
         <h3 className='component-heading'>About Me</h3>
         <hr />
@@ -21,6 +23,7 @@ const About = () => {
           </div>
         </div>
     </div>
+    </AnimatedPage>
   )
 }
 

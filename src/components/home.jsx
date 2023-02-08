@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import { useNavigate } from 'react-router-dom'
+import AnimatedPage from './animatedpage';
 
 const Home = (props) => {
   const navigate = useNavigate();
 
   return (
     <>
+    <AnimatedPage>
     <div className='home-header-div'>
       <h3 className='home-heading'>Your Next Software Developer</h3>
     </div>
@@ -17,6 +19,7 @@ const Home = (props) => {
           <div className='home-nav-grid-item' id='home-contact' onClick={() => {navigate('/contact')}}><span className='home-span'>contact</span></div>
         </div>
     </div>
+    </AnimatedPage>
     </>
   )
 }

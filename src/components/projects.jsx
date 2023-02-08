@@ -1,10 +1,12 @@
 import React, {useState, useEffect} from 'react'
+import AnimatedPage from './animatedpage';
 
 const Projects = () => {
     
     
     
     return (
+        <AnimatedPage>
         <div className='projects-div'>
             <h3 className='component-heading'>Projects</h3>
             <hr />
@@ -48,6 +50,7 @@ const Projects = () => {
 
             </div>
         </div>
+        </AnimatedPage>
   )
 }
 

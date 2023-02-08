@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from 'react'
+import AnimatedPage from './animatedpage';
 
 const Skills = () => {
   return (
+    <AnimatedPage>
     <div className='skills-div'>
         <h3 className='component-heading'>Skills</h3>
         <hr />
@@ -17,6 +19,7 @@ const Skills = () => {
             <div><img className='skills-img' src="/django.png" alt="" /></div>
         </div>
     </div>
+    </AnimatedPage>
   )
 }
 

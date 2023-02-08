@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { send } from 'emailjs-com';
+import AnimatedPage from './animatedpage';
 
 const Contact = () => {
 
@@ -37,6 +38,7 @@ const Contact = () => {
 
   return (
     <>
+    <AnimatedPage>
     <div className='contact-header'>
       <h3>Reach Out!</h3>
     </div>
@@ -80,6 +82,7 @@ const Contact = () => {
         </form>
       </div>
     </div>
+    </AnimatedPage>
     </>
   )
 }

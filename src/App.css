@@ -74,7 +74,7 @@ body {
 
 .project-img {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .project-img:hover {
@@ -96,7 +96,7 @@ body {
   top: 0;
   width: 33%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .project-description:hover {
@@ -349,9 +349,14 @@ form {
 
 @media screen and (max-width: 992px) {
   .project-images-grid {
-    grid-template-columns: 40% 40%;
-    grid-template-rows: auto auto;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
   }
+
+  .container {
+    min-height: 700px;
+  }
+
 
  .nav-ul {
   padding-left: 0;
@@ -386,7 +391,7 @@ form {
 
   .container {
     min-height: 700px;
-    max-height: 1500px;
+    max-height: 2000px;
   }
 
   .skills-grid {

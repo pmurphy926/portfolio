@@ -330,6 +330,23 @@ form {
   width: 100%;
 }
 
+.bio {
+  display: flex;
+  flex-direction: row;
+}
+
+.bio-text-div {
+  float: right;
+  margin-left: 10px;
+}
+
+.bio-img {
+  width: 100%;
+  border-radius: 10px;
+  float: left;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 992px) {
   .project-images-grid {
     grid-template-columns: 40% 40%;
@@ -373,6 +390,10 @@ form {
 
   .skills-grid {
     grid-template-columns: 50% 50%;
+  }
+
+  .bio {
+    flex-direction: column;
   }
 
 }

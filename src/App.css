@@ -386,6 +386,7 @@ form {
 
   .container {
     min-height: 700px;
+    max-height: 1500px;
   }
 
   .skills-grid {
